@@ -16,16 +16,16 @@ body {
     font-size: var(--font-base);
 }
 
-#largeFontToggle:checked ~ * {
+#largeFontToggle:checked~* {
     --font-base: 1.2rem;
 }
 
-#smallFontToggle:checked ~ * {
+#smallFontToggle:checked~* {
     --font-base: 0.8rem;
 }
 
 /* Alto contraste */
-#highContrastToggle:checked ~ * {
+#highContrastToggle:checked~* {
     --primary-color: #ffff00;
     --secondary-color: #ffcc00;
     --dark-color: #000000;
@@ -53,7 +53,12 @@ footer {
     background-color: var(--footer-bg);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--primary-color);
@@ -150,11 +155,11 @@ section {
         padding: 3rem 0;
         text-align: center;
     }
-    
+
     .hero-section img {
         margin-top: 2rem;
     }
-    
+
     .accessibility-tools {
         margin-top: 1rem;
         justify-content: center;
@@ -165,12 +170,51 @@ section {
     :root {
         --font-base: 0.9rem;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     section {
         padding: 2rem 0;
     }
+}
+
+/* Estilo para o modo de alto contraste */
+#highContrastToggle:checked~* {
+    --primary-color: #ffff00;
+    --secondary-color: #ffcc00;
+    --dark-color: #000000;
+    --light-color: #000000;
+    --text-color: #ffffff;
+    --text-light: #cccccc;
+    --background-color: #000000;
+    --header-bg: #000000;
+    --footer-bg: #000000;
+}
+
+#highContrastToggle:checked~* body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+#highContrastToggle:checked~* a {
+    color: var(--primary-color) !important;
+    text-decoration: underline !important;
+}
+
+#highContrastToggle:checked~* .btn-outline-light {
+    border-color: var(--text-color) !important;
+    color: var(--text-color) !important;
+}
+
+#highContrastToggle:checked~* .bg-success,
+#highContrastToggle:checked~* .bg-dark {
+    background-color: var(--background-color) !important;
+    border: 2px solid var(--text-color) !important;
+}
+
+#highContrastToggle:checked~* .text-white,
+#highContrastToggle:checked~* .text-success {
+    color: var(--text-color) !important;
 }

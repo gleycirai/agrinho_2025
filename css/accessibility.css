@@ -1,5 +1,59 @@
 /* Estilos de Acessibilidade */
 
+:root {
+    --high-contrast-bg: #000;
+    --high-contrast-text: #fff;
+    --high-contrast-accent: #ff0;
+}
+
+/* Modificar a classe high-contrast */
+.high-contrast {
+    background-color: var(--high-contrast-bg) !important;
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast .bg-light,
+.high-contrast .bg-success,
+.high-contrast .bg-dark {
+    background-color: var(--high-contrast-bg) !important;
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast .text-white,
+.high-contrast .text-dark,
+.high-contrast .text-success {
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast .card {
+    background-color: var(--high-contrast-bg) !important;
+    border: 2px solid var(--high-contrast-text) !important;
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast a {
+    color: var(--high-contrast-accent) !important;
+}
+
+/* Adicionar regras para outros elementos importantes */
+.high-contrast .btn-outline-light {
+    border-color: var(--high-contrast-text) !important;
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast .dropdown-menu {
+    background-color: var(--high-contrast-bg) !important;
+    border: 2px solid var(--high-contrast-text) !important;
+}
+
+.high-contrast .dropdown-item {
+    color: var(--high-contrast-text) !important;
+}
+
+.high-contrast .dropdown-item:hover {
+    background-color: #333 !important;
+}
+
 /* Alto Contraste */
 .high-contrast {
     background-color: #000 !important;
@@ -90,16 +144,16 @@ video::cue {
 }
 
 /* Efeitos visuais para checkboxes ativos */
-#largeFontToggle:checked + label[for="largeFontToggle"],
-#smallFontToggle:checked + label[for="smallFontToggle"],
-#highContrastToggle:checked + label[for="highContrastToggle"] {
+#largeFontToggle:checked+label[for="largeFontToggle"],
+#smallFontToggle:checked+label[for="smallFontToggle"],
+#highContrastToggle:checked+label[for="highContrastToggle"] {
     background-color: var(--primary-color);
     color: white;
 }
 
 /* Reset para quando outro controle do mesmo grupo é ativado */
-#largeFontToggle:checked ~ * #smallFontToggle + label,
-#smallFontToggle:checked ~ * #largeFontToggle + label {
+#largeFontToggle:checked~* #smallFontToggle+label,
+#smallFontToggle:checked~* #largeFontToggle+label {
     background-color: transparent;
     color: inherit;
 }
@@ -125,45 +179,131 @@ video::cue {
 }
 
 /* Estilos para alto contraste */
-#highContrastToggle:checked ~ * {
-    --primary-color: #ffff00;
-    --secondary-color: #ffcc00;
+#highContrastToggle:checked~* {
+    --primary-color: #000000;
+    /* Preto para elementos primários */
+    --secondary-color: #333333;
+    /* Cinza escuro para hover/efeitos */
     --dark-color: #000000;
-    --light-color: #000000;
-    --text-color: #ffffff;
-    --text-light: #cccccc;
-    --background-color: #000000;
-    --header-bg: #000000;
-    --footer-bg: #000000;
+    /* Preto para textos e bordas */
+    --light-color: #ffffff;
+    /* Branco para fundos */
+    --text-color: #000000;
+    /* Texto preto */
+    --text-light: #000000;
+    /* Texto claro também preto */
+    --background-color: #ffffff;
+    /* Fundo branco */
+    --header-bg: #ffffff;
+    /* Cabeçalho branco */
+    --footer-bg: #ffffff;
+    /* Rodapé branco */
 }
 
-#highContrastToggle:checked ~ * .card {
-    border: 2px solid var(--primary-color) !important;
+/* Ajustes específicos */
+#highContrastToggle:checked~* body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
 }
 
-#highContrastToggle:checked ~ * a {
-    color: var(--primary-color) !important;
+#highContrastToggle:checked~* .card {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    color: #000000 !important;
+}
+
+#highContrastToggle:checked~* a {
+    color: #000000 !important;
     text-decoration: underline !important;
 }
 
+#highContrastToggle:checked~* .btn-outline-light {
+    border-color: #000000 !important;
+    color: #000000 !important;
+}
+
+#highContrastToggle:checked~* .bg-success,
+#highContrastToggle:checked~* .bg-dark {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+#highContrastToggle:checked~* .text-white,
+#highContrastToggle:checked~* .text-success {
+    color: #000000 !important;
+}
+
 /* Melhorias para tamanhos de fonte grandes */
-#largeFontToggle:checked ~ * {
+#largeFontToggle:checked~* {
     --font-base: 1.2rem;
 }
 
-#largeFontToggle:checked ~ * .navbar-brand {
+#largeFontToggle:checked~* .navbar-brand {
     font-size: 1.8rem;
 }
 
-#largeFontToggle:checked ~ * .btn {
+#largeFontToggle:checked~* .btn {
     padding: 0.5rem 1rem;
 }
 
 /* Melhorias para tamanhos de fonte pequenos */
-#smallFontToggle:checked ~ * {
+#smallFontToggle:checked~* {
     --font-base: 0.8rem;
 }
 
-#smallFontToggle:checked ~ * .navbar-brand {
+#smallFontToggle:checked~* .navbar-brand {
     font-size: 1.2rem;
+}
+
+#highContrastToggle:checked~* .btn-primary {
+    background-color: #000000 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+#highContrastToggle:checked~* .btn-primary:hover {
+    background-color: #333333 !important;
+}
+
+#highContrastToggle:checked~* .dropdown-menu {
+    background-color: #000000 !important;
+    border: 1px solid #ffffff !important;
+}
+
+#highContrastToggle:checked~* .dropdown-item {
+    color: #ffffff !important;
+}
+
+#highContrastToggle:checked~* .dropdown-item:hover {
+    background-color: #333333 !important;
+}
+
+/* Botões e interações */
+#highContrastToggle:checked~* .btn-primary {
+    background-color: #ffffff !important;
+    border-color: #000000 !important;
+    color: #000000 !important;
+}
+
+#highContrastToggle:checked~* .btn-primary:hover {
+    background-color: #eeeeee !important;
+}
+
+/* Dropdowns e menus */
+#highContrastToggle:checked~* .dropdown-menu {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
+
+#highContrastToggle:checked~* .dropdown-item {
+    color: #000000 !important;
+}
+
+#highContrastToggle:checked~* .dropdown-item:hover {
+    background-color: #eeeeee !important;
+}
+
+/* Vídeos e mídia */
+#highContrastToggle:checked~* video {
+    border: 2px solid #000000 !important;
 }
