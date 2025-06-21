@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyHarvest - Drones Agrícolas Inteligentes</title>
+    <title>SkyHarvest - Advanced Agricultural Drones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/accessibility.css">
@@ -12,11 +13,18 @@
             position: absolute;
             left: -9999px;
         }
-        
-        .lang-pt, .lang-en { display: none; }
-        :root:lang(es) .lang-es { display: block; }
+
+        .lang-pt,
+        .lang-es {
+            display: none;
+        }
+
+        :root:lang(en) .lang-en {
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <input type="checkbox" id="highContrastToggle" class="hidden-input">
     <input type="checkbox" id="largeFontToggle" class="hidden-input">
@@ -26,7 +34,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <img src="images/icons/logo.png" alt="Logo de SkyHarvest" height="40">
+                    <img src="images/icons/logo.png" alt="SkyHarvest Logo" height="40">
                     SkyHarvest
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -34,18 +42,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sobre-es.html">Sobre el Proyecto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-en.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                     <div class="accessibility-tools">
                         <label for="largeFontToggle" class="btn btn-sm btn-outline-light">A+</label>
                         <label for="smallFontToggle" class="btn btn-sm btn-outline-light">A-</label>
-                        <label for="highContrastToggle" class="btn btn-sm btn-outline-light">Alto Contraste</label>
+                        <label for="highContrastToggle" class="btn btn-sm btn-outline-light">High Contrast</label>
                         <div class="dropdown d-inline-block">
-                            <button class="btn btn-sm btn-outline-light dropdown-toggle" id="languageDropdown" data-bs-toggle="dropdown">
-                                ES
+                            <button class="btn btn-sm btn-outline-light dropdown-toggle" id="languageDropdown"
+                                data-bs-toggle="dropdown">
+                                EN
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="index.html">Português</a></li>
@@ -64,12 +73,13 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h1 class="display-4 fw-bold">Revolución Agrícola con Drones Inteligentes</h1>
-                        <p class="lead">Monitoreo en tiempo real, cosecha precisa y entrega directa al consumidor.</p>
-                        <a href="#features" class="btn btn-primary btn-lg">Saber Más</a>
+                        <h1 class="display-4 fw-bold">Agricultural Revolution with Smart Drones</h1>
+                        <p class="lead">Real-time monitoring, precise harvesting and direct delivery to consumers.</p>
+                        <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/drone-principal.png" alt="Dron agrícola en operación" class="img-fluid rounded shadow">
+                        <img src="images/drone-principal.png" alt="Agricultural drone in operation"
+                            class="img-fluid rounded shadow">
                     </div>
                 </div>
             </div>
@@ -77,32 +87,36 @@
 
         <section id="features" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center mb-5">Nuestras Soluciones</h2>
+                <h2 class="text-center mb-5">Our Solutions</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="images/drone-plantacao.png" class="card-img-top" alt="Dron monitoreando cultivos">
+                            <img src="images/drone-plantacao.png" class="card-img-top" alt="Drone monitoring crops">
                             <div class="card-body">
-                                <h3 class="card-title">Monitoreo Avanzado</h3>
-                                <p class="card-text">Nuestros drones recolectan datos precisos sobre salud de plantas, humedad del suelo y más.</p>
+                                <h3 class="card-title">Advanced Monitoring</h3>
+                                <p class="card-text">Our drones collect precise data about plant health, soil moisture
+                                    and more.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="images/plataforma-monitoramento.png" class="card-img-top" alt="Plataforma de monitoreo">
+                            <img src="images/plataforma-monitoramento.png" class="card-img-top"
+                                alt="Monitoring platform">
                             <div class="card-body">
-                                <h3 class="card-title">Plataforma Integrada</h3>
-                                <p class="card-text">Accede a datos en tiempo real y realiza pedidos directamente desde nuestra plataforma online.</p>
+                                <h3 class="card-title">Integrated Platform</h3>
+                                <p class="card-text">Access real-time data and place orders directly from our online
+                                    platform.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="images/drone-entrega.png" class="card-img-top" alt="Dron realizando entrega">
+                            <img src="images/drone-entrega.png" class="card-img-top" alt="Drone making delivery">
                             <div class="card-body">
-                                <h3 class="card-title">Entrega Directa</h3>
-                                <p class="card-text">Recibe productos frescos directamente del campo a tu casa, con seguimiento en tiempo real.</p>
+                                <h3 class="card-title">Direct Delivery</h3>
+                                <p class="card-text">Receive fresh products directly from the farm to your home, with
+                                    real-time tracking.</p>
                             </div>
                         </div>
                     </div>
@@ -114,14 +128,14 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h2>Mira Nuestro Dron en Acción</h2>
-                        <p>Observa cómo nuestra tecnología revoluciona la agricultura y distribución de alimentos.</p>
+                        <h2>Watch Our Drone in Action</h2>
+                        <p>See how our technology revolutionizes agriculture and food distribution.</p>
                     </div>
                     <div class="col-md-6">
                         <div class="ratio ratio-16x9">
-                            <video controls aria-label="Video demostrativo del dron en operación">
+                            <video controls aria-label="Demonstration video of drone operation">
                                 <source src="video/drone-operacao.mp4" type="video/mp4">
-                                Tu navegador no soporta el elemento de video.
+                                Your browser does not support the video element.
                             </video>
                         </div>
                     </div>
@@ -131,30 +145,30 @@
 
         <section id="specs" class="py-5 bg-success text-white">
             <div class="container">
-                <h2 class="text-center mb-5">Especificaciones Técnicas</h2>
+                <h2 class="text-center mb-5">Technical Specifications</h2>
                 <div class="row text-center">
                     <div class="col-md-3">
                         <div class="p-3">
-                            <h3>400 km</h3>
-                            <p>Autonomía de vuelo (ida y vuelta)</p>
+                            <h3>250 mi</h3>
+                            <p>Flight range (round trip)</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="p-3">
-                            <h3>80 kg</h3>
-                            <p>Capacidad de carga</p>
+                            <h3>175 lbs</h3>
+                            <p>Payload capacity</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="p-3">
                             <h3>24/7</h3>
-                            <p>Monitoreo continuo</p>
+                            <p>Continuous monitoring</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="p-3">
                             <h3>100%</h3>
-                            <p>Ecológico y sustentable</p>
+                            <p>Eco-friendly and sustainable</p>
                         </div>
                     </div>
                 </div>
@@ -163,12 +177,12 @@
 
         <section id="contact" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Contacto</h2>
+                <h2 class="text-center mb-5">Contact Us</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <form>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Nombre</label>
+                                <label for="name" class="form-label">Name</label>
                                 <input type="text" class="form-control" id="name" required>
                             </div>
                             <div class="mb-3">
@@ -176,10 +190,10 @@
                                 <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="message" class="form-label">Mensaje</label>
+                                <label for="message" class="form-label">Message</label>
                                 <textarea class="form-control" id="message" rows="3" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -192,27 +206,28 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3>SkyHarvest</h3>
-                    <p>Revolucionando la agricultura con tecnología de punta.</p>
+                    <p>Revolutionizing agriculture with cutting-edge technology.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3>Enlaces Rápidos</h3>
+                    <h3>Quick Links</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Inicio</a></li>
-                        <li><a href="sobre-es.html" class="text-white">Sobre el Proyecto</a></li>
-                        <li><a href="#features" class="text-white">Funcionalidades</a></li>
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="sobre-en.html" class="text-white">About</a></li>
+                        <li><a href="#features" class="text-white">Features</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h3>Contacto</h3>
-                    <p>contacto@SkyHarvest.com<br>+34 123 456 789</p>
+                    <h3>Contact</h3>
+                    <p>contact@SkyHarvest.com<br>+1 555-123-4567</p>
                 </div>
             </div>
             <div class="text-center mt-3">
-                <p>&copy; 2025 SkyHarvest. Todos los derechos reservados.</p>
+                <p>&copy; 2025 SkyHarvest. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

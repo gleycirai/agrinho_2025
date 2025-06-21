@@ -1,6 +1,6 @@
-AgriDrone - Drones Agrícolas Inteligentes
+SkyHarvest - Drones Agrícolas Inteligentes
 
-O AgriDrone é uma solução revolucionária que utiliza drones de última geração para monitoramento agrícola e entrega direta ao consumidor. Nossos drones podem percorrer até 400km (ida e volta) e transportar até 80kg de carga, além de seu próprio peso.
+O SkyHarvest é uma solução revolucionária que utiliza drones de última geração para monitoramento agrícola e entrega direta ao consumidor. Nossos drones podem percorrer até 400km (ida e volta) e transportar até 80kg de carga, além de seu próprio peso.
 
 Funcionalidades Principais
 
@@ -39,7 +39,7 @@ Este projeto está disponível sob licença MIT. Consulte o arquivo LICENSE para
 
 Links
 
-- [Site do Projeto](https://www.agridrone.com)
+- [Site do Projeto](https://gleycirai.github.io/agrinho_2025/)
 - [Documentação Completa](sobre.html)
 
 Estrutura do Projeto
