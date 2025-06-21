@@ -126,29 +126,19 @@ Drone Principal:
 
 Prompt: "Um drone agrícola futurista, grande, com seis hélices, equipado com câmeras e sensores, voando sobre um campo de cultivo durante o pôr do sol. O drone deve parecer robusto e tecnológico, com luzes LED azuis. Estilo realista, alta resolução."
 
-Link: Download gratuito
-
 Drone Monitorando Plantação:
 
 Prompt: "Drone agrícola equipado com sensores multiespectrais voando baixo sobre um campo de trigo saudável, com linhas de plantio visíveis. Mostrar raios laser ou luzes de sensor saindo do drone em direção às plantas. Dia claro com céu azul."
-
-Link: Download gratuito
 
 Plataforma de Monitoramento:
 
 Prompt: "Dashboard digital moderno mostrando dados agrícolas como saúde das plantas, umidade do solo e mapas de calor de uma plantação. Incluir gráficos, imagens de satélite e controles para drones. Tela de computador em um escritório moderno com plantas ao fundo."
 
-Link: Download gratuito
-
 Drone de Entrega:
 
 Prompt: "Drone de carga grande entregando uma cesta de vegetais frescos em uma casa suburbana moderna. Mostrar o drone pairando enquanto solva a cesta com um sistema de cabos. Família sorridente observando a entrega. Dia ensolarado."
 
-Link: Download gratuito
-
 Vídeo Demonstrativo:
 
 Prompt: "Vídeo animado de um drone agrícola realizando várias tarefas: sobrevoando plantações, coletando dados com sensores, colhendo frutas com um braço robótico e entregando em uma casa. Mostrar a interface da plataforma de controle com mapas e dados em tempo real. Duração de 30-45 segundos."
-
-Link: Download gratuito
 
